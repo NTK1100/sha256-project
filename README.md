@@ -26,9 +26,9 @@ Sau khi build xong, bạn sẽ có file `lib/sha256.so` (Linux/macOS) hoặc `li
 
 ---
 
-### 2. Dùng trong C
+## 2. Dùng trong C
 
-#### Ví dụ: tạo file `test/test.c`:
+### Ví dụ: tạo file `test/test.c`:
 
 ```c
 #include <stdio.h>
@@ -50,7 +50,7 @@ int main() {
 ```
 > **Lưu ý**: Phải để thư viện động (`sha256.so` hoặc `sha256.dll`) trong thư mục `test/` hoặc thêm đường dẫn vào biến môi trường (`LD_LIBRARY_PATH`/`PATH`).
 
-#### Biên dịch & chạy:
+### Biên dịch & chạy:
 
 * **Linux/macOS**:
 
@@ -72,9 +72,9 @@ int main() {
 
 ---
 
-### 3. Dùng trong Python (ctypes)
+## 3. Dùng trong Python (ctypes)
 
-#### Ví dụ: tạo file `test/test.py`:
+### Ví dụ: tạo file `test/test.py`:
 
 ```python
 import ctypes
@@ -102,12 +102,14 @@ if __name__ == '__main__':
     print("C ctypes  :", sha256_c(msg).hex())
 ```
 
-#### Chạy test:
+### Chạy test:
 
 ```bash
 cd test
 python3 test.py
 ```
 
----
+## MIT License
+
+Copyright (c) 2025 NTK1100
 
